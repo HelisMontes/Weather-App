@@ -8,7 +8,7 @@ export const commonWeatherInfo = `
 `
 export const WeatherForecast = styled.section`
   width: 32%;
-  min-width: 145px;
+  min-width: 142px;
   ${bps.phonesSmall}{
     ${commonWeatherInfo}
   }
@@ -29,12 +29,12 @@ export const ForecastWidgetsItem = styled.div`
 
   i{
     color: var(--secondary);
-    font-size: 35px;
+    font-size: 30px;
   }
 `
 export const ForecastWidgetsItemTitles = styled.div`
   h3{
-    font-size: 15px;
+    font-size: 13px;
   }
   p{
     font-size: 12px;

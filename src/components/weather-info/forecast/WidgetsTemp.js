@@ -1,12 +1,13 @@
 import React from 'react';
 import { ForecastWidgetsTemp } from './style';
 
-export const WidgetsTemp = () => {
+export const WidgetsTemp = ({temp}) => {
   return (
     <ForecastWidgetsTemp>
       <p> 
-        16<span>&#176;</span> /
-        18<span>&#176;</span>
+        {Math.ceil(temp.min)}<span>&#176;</span>
+        <spam> / </spam>  
+        {Math.ceil(temp.max)}<span>&#176;</span>
       </p>
     </ForecastWidgetsTemp>
   )

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const useFetch = (city) => {
   const APP_ID = '366c702cc6505ba2ca508a46c7d8552b';
-  const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APP_ID}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APP_ID}`;
    
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true)

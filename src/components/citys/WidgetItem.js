@@ -3,12 +3,12 @@ import { WidgetItemHeader } from './WidgetItemHeader';
 import { WidgetItemFooter } from './WidgetItemFooter';
 import { WeatherWidgetItem } from './style';
 
-export const WidgetItem = ({paris}) => {
-  const {name, main} = !!paris && paris
+export const WidgetItem = ({item}) => {
+  const {humidity, name, temp, weather, wind} = item
   return (
     <WeatherWidgetItem>
-      <WidgetItemHeader data={{name, main}}/>
-      <WidgetItemFooter />
+      <WidgetItemHeader data={{weather, name, temp}} />
+      <WidgetItemFooter data={{humidity, weather, wind}} />
     </WeatherWidgetItem>
   )
 }

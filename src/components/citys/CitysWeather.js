@@ -5,15 +5,18 @@ import { UiContext } from '../../context/UiContext'
 import { Weather } from './style';
 
 export const CitysWeather = () => {
-  const {paris} = useContext(UiContext);
-  const { id}  = !!paris && paris
+  const {items} = useContext(UiContext);
   return (
     <Weather>
       <div className="citys--weather__widget">
-          <WidgetItem />
-          {
-            id &&  <WidgetItem paris={paris}/>
-          }
+        {
+          items.map( item => (
+            <WidgetItem
+              key={item.id*item.id} 
+              item={item}
+            />
+          ))
+        }
       </div>
       <Add />
     </Weather>

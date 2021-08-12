@@ -6,7 +6,7 @@ export const WidgetsTemp = ({temp}) => {
     <ForecastWidgetsTemp>
       <p> 
         {Math.ceil(temp.min)}<span>&#176;</span>
-        <spam> / </spam>  
+        <span> / </span>  
         {Math.ceil(temp.max)}<span>&#176;</span>
       </p>
     </ForecastWidgetsTemp>
